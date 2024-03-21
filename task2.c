@@ -120,7 +120,7 @@ void addsuffix(State *sp, WordNode *suffix)
     sp->suf = suf;
 }
 
-void add(WordNode *prefix[NPREF], WordNode *suffix)
+void add(WordNode *prefix[NPREF], WordNode *suffix)//додаємо суфікс до знайденого/створеного стану та оновлюємо масив префіксів додаючи до них суфікс
 {
     State *sp;
     sp = lookupState(prefix, 1);
